@@ -110,22 +110,6 @@
       "repository_url": "https://github.com/Heart-Quake/automation-seo-audit-tech"
     },
     {
-      "name": "Analyse de Maillage Interne SEO",
-      "slug": "internal-linking-analysis",
-      "category": "Maillage interne",
-      "status": "Valide V1",
-      "project_path": "maillage-interne",
-      "entrypoint": "app_streamlit.py",
-      "description": "Analyse et recommandations de maillage interne depuis exports GSC et crawl SEO.",
-      "evidence": [
-        "Point d'entree valide",
-        "README utile",
-        "requirements.txt present"
-      ],
-      "notes": "Projet non Git autonome detecte, mais documentation et entree Streamlit sont claires.",
-      "port": 8608
-    },
-    {
       "name": "SILO",
       "slug": "silo-semantic-internal-link-optimizer",
       "category": "Maillage interne",
