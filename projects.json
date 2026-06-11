@@ -48,7 +48,9 @@
         "Tests detectes"
       ],
       "notes": "API non documentee : utiliser avec prudence et delais raisonnables.",
-      "port": 8604
+      "port": 8604,
+      "live_url": "https://similarweb-api.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/Similarweb-free-API"
     },
     {
       "name": "Amazon Reviews Scraper",
@@ -66,7 +68,9 @@
         "Tests detectes"
       ],
       "notes": "Verifier la conformite aux CGU Amazon avant usage operationnel.",
-      "port": 8605
+      "port": 8605,
+      "live_url": "https://amazon-review-scraper.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/amazon-scraper"
     },
     {
       "name": "Analyse Content Gap",
@@ -135,7 +139,9 @@
         "Tests detectes"
       ],
       "notes": "Peut necessiter le modele spaCy francais indique dans le README.",
-      "port": 8609
+      "port": 8609,
+      "live_url": "https://silolinks.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/silo"
     },
     {
       "name": "Generateur de Spin Content",
@@ -152,7 +158,9 @@
         "Tests detectes"
       ],
       "notes": "Outil robuste pour production de variantes controlees.",
-      "port": 8610
+      "port": 8610,
+      "live_url": "https://content-spinner.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/Content-Spinner"
     },
     {
       "name": "Keyword Planner Batch Cockpit",
