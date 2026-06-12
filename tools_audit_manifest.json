@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "workspace_root": "/Users/vincentflaceliere/Github",
+  "generated_from": "moon-hub-live-public/projects.json",
+  "design_requirements": {
+    "theme_helper": "automation_seo_theme.py",
+    "logo_asset": "logo-sidebar-cream.png",
+    "required_runtime_markers": [
+      "--yn-bg",
+      ".sidebar-logo",
+      ".tool-hero"
+    ],
+    "forbidden_patterns": [
+      "#2BAF9C",
+      "DR SEO",
+      "Dr. SEO",
+      "st.image(\"DR",
+      "base = \"light\""
+    ]
+  },
+  "tools": [
+    {
+      "name": "Similarweb Free API Cockpit",
+      "slug": "similarweb-free-api-cockpit",
+      "local_path": "Similarweb-free-API",
+      "entrypoint": "streamlit_app.py",
+      "live_url": "https://similarweb-api.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/Similarweb-free-API",
+      "branch": "main",
+      "compile_targets": ["streamlit_app.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest",
+      "requires_hero": true,
+      "primary_controls": ["Comparer", "Domaines"]
+    },
+    {
+      "name": "Amazon Reviews Scraper",
+      "slug": "amazon-reviews-scraper",
+      "local_path": "amazon-scraper",
+      "entrypoint": "streamlit_app.py",
+      "live_url": "https://amazon-review-scraper.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/amazon-scraper",
+      "branch": "main",
+      "compile_targets": ["streamlit_app.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest",
+      "requires_hero": true,
+      "primary_controls": ["ASIN", "Importer", "Scraper"]
+    },
+    {
+      "name": "Analyse Content Gap",
+      "slug": "content-gap-analysis",
+      "local_path": "analyse-content-gap",
+      "entrypoint": "app.py",
+      "live_url": "https://space-gap.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/analyse-content-gap",
+      "branch": "main",
+      "compile_targets": ["app.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest",
+      "requires_hero": true,
+      "primary_controls": ["Importer les fichiers CSV", "Guide d'utilisation"]
+    },
+    {
+      "name": "SEO Audit Automator",
+      "slug": "seo-audit-automator",
+      "local_path": "automation-seo-audit-tech",
+      "entrypoint": "streamlit_app.py",
+      "live_url": "https://automation-seo-audit-tech.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/automation-seo-audit-tech",
+      "branch": "main",
+      "compile_targets": ["streamlit_app.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest",
+      "requires_hero": true,
+      "primary_controls": ["Upload", "Audit", "Screaming Frog"]
+    },
+    {
+      "name": "SILO",
+      "slug": "silo-semantic-internal-link-optimizer",
+      "local_path": "silo",
+      "entrypoint": "app.py",
+      "live_url": "https://silolinks.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/silo",
+      "branch": "main",
+      "compile_targets": ["app.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest",
+      "requires_hero": true,
+      "primary_controls": ["CSV", "similarité", "maillage"]
+    },
+    {
+      "name": "Generateur de Spin Content",
+      "slug": "spin-content-generator",
+      "local_path": "spin_tool",
+      "entrypoint": "spin_generator.py",
+      "live_url": "https://content-spinner.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/Content-Spinner",
+      "branch": "main",
+      "compile_targets": ["spin_generator.py", "csv_service.py", "template_engine.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest tests",
+      "requires_hero": true,
+      "primary_controls": ["Mode simple", "Mode CSV", "Multi-champs"]
+    },
+    {
+      "name": "Keyword Categorization App",
+      "slug": "keyword-categorization-app",
+      "local_path": "automation-seo-keyword-categorization",
+      "entrypoint": "app/main.py",
+      "live_url": "https://automation-seo-keyword-categorization.streamlit.app/",
+      "repository_url": "https://github.com/Heart-Quake/automation-seo-keyword-categorization",
+      "branch": "main",
+      "compile_targets": ["app/main.py", "automation_seo_theme.py"],
+      "test_command": "python3 -m pytest",
+      "requires_hero": true,
+      "primary_controls": ["Upload", "Catégoriser", "Keyword"]
+    }
+  ]
+}
