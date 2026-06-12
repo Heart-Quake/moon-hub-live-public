@@ -136,11 +136,74 @@ def inject_styles() -> None:
             }
 
             [data-testid="stSidebar"] input,
+            [data-testid="stSidebar"] textarea,
             [data-testid="stSidebar"] [role="combobox"],
-            [data-testid="stSidebar"] [role="radiogroup"] label {
+            [data-testid="stSidebar"] [data-baseweb="select"] > div,
+            [data-testid="stSidebar"] [data-baseweb="input"] > div {
                 background: var(--hub-card-strong);
-                border-color: var(--hub-border);
-                color: var(--hub-foreground);
+                border: 1px solid var(--hub-border);
+                border-radius: 8px;
+                color: var(--hub-foreground) !important;
+            }
+
+            [data-testid="stSidebar"] [data-baseweb="select"] span,
+            [data-testid="stSidebar"] [data-baseweb="select"] div,
+            [data-testid="stSidebar"] [data-baseweb="input"] input,
+            [data-testid="stSidebar"] [role="combobox"] {
+                color: var(--hub-foreground) !important;
+                -webkit-text-fill-color: var(--hub-foreground) !important;
+            }
+
+            [data-testid="stSidebar"] input::placeholder {
+                color: var(--hub-muted-strong) !important;
+                opacity: 1;
+                -webkit-text-fill-color: var(--hub-muted-strong) !important;
+            }
+
+            [data-testid="stSidebar"] [data-baseweb="select"] svg {
+                fill: var(--hub-muted) !important;
+            }
+
+            [data-testid="stSidebar"] [data-baseweb="select"]:focus-within > div,
+            [data-testid="stSidebar"] [data-baseweb="input"]:focus-within > div {
+                border-color: var(--hub-accent);
+                box-shadow: 0 0 0 2px var(--hub-ring);
+            }
+
+            [data-testid="stSidebar"] [role="radiogroup"] label {
+                background: transparent !important;
+                border: 0;
+                color: var(--hub-muted) !important;
+            }
+
+            [data-testid="stSidebar"] [role="radiogroup"] label span {
+                color: var(--hub-muted) !important;
+            }
+
+            [data-baseweb="popover"] [role="listbox"],
+            [data-baseweb="menu"] {
+                background: var(--hub-card-strong) !important;
+                border: 1px solid var(--hub-border) !important;
+                color: var(--hub-foreground) !important;
+            }
+
+            [data-baseweb="popover"] [role="option"],
+            [data-baseweb="menu"] li {
+                background: var(--hub-card-strong) !important;
+                color: var(--hub-foreground) !important;
+            }
+
+            [data-baseweb="popover"] [role="option"]:hover,
+            [data-baseweb="menu"] li:hover {
+                background: var(--hub-card-hover) !important;
+            }
+
+            [data-baseweb="popover"] [role="option"][aria-selected="true"],
+            [data-baseweb="popover"] [role="option"][aria-checked="true"],
+            [role="option"][aria-selected="true"],
+            [role="option"][aria-checked="true"] {
+                background: rgba(73, 220, 188, 0.16) !important;
+                color: var(--hub-foreground) !important;
             }
 
             .block-container {
